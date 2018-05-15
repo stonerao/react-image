@@ -1,0 +1,102 @@
+@import './color.scss';
+.absolute-all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+$colors:#333;
+.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: $colors;
+    .login-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.65;
+        background-image: url('../assets/timg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+    .login-b {
+        background-color: $color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.45;
+    }
+    .login-title {
+        font-size: 0.48rem;
+        margin-bottom: 1.2rem;
+    }
+    .login-center {
+        width: 98%;
+        text-align: center;
+    }
+    .login-list { 
+        li {
+            margin-top: 0.2rem;
+            padding: 0 0.2rem;
+            input {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid $color*0.8;
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                height: 0.48rem;
+                color: $colors;
+                text-align: center;
+            }
+            .login-submit {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                height: 0.64rem;
+                margin-top: 0.4rem;
+                border: 0;
+                background-color: transparent;
+                border-radius: 4px;
+                border: 0.01rem solid $color;
+            }
+        }
+        .login-link {
+            overflow: hidden;
+            line-height: 0.8rem;
+            span {
+                color: $colors;
+                font-size: 0.28rem;
+            }
+            span:first-child {
+                float: left;
+            }
+            span:last-child {
+                float: right;
+            }
+        }
+    }
+}
